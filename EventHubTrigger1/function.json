@@ -1,0 +1,36 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "hub1",
+      "connection": "sleventhub001_RootManageSharedAccessKey_EVENTHUB",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "eventHub",
+      "direction": "out",
+      "name": "eventsout",
+      "connection": "sleventhub002_RootManageSharedAccessKey_EVENTHUB",
+      "eventHubName": "hub1"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "cosmosout",
+      "databaseName": "fncdb",
+      "collectionName": "fncollection",
+      "connectionStringSetting": "orderscdb_DOCUMENTDB"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "adlsout",
+      "path": "output/{rand-guid}",
+      "connection": "datalakeforfntrigger_STORAGE"
+    }
+  ]
+}

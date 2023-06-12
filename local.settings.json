@@ -1,0 +1,11 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=xxxxx;AccountKey=xxx+xxx+xx==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "sleventhub001_RootManageSharedAccessKey_EVENTHUB": "Endpoint=sb://xxx.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xx+xx+xx=;EntityPath=hub1",
+    "sleventhub002_RootManageSharedAccessKey_EVENTHUB": "Endpoint=sb://xxxx.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xx+xxxx=;EntityPath=hub1",
+    "orderscdb_DOCUMENTDB": "AccountEndpoint=https://xxx.documents.azure.com:443/;AccountKey=xxxx==;",
+    "datalakeforfntrigger_STORAGE": "DefaultEndpointsProtocol=https;AccountName=xxx;AccountKey=xx+xx+xx==;EndpointSuffix=core.windows.net"
+  }
+}
